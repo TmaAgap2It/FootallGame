@@ -1,0 +1,17 @@
+.container{
+    display:flex;
+    align-items: center;
+    height: calc(100% - 200px);
+
+    padding: 100px;
+    background-color: plum;
+
+    .content{
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

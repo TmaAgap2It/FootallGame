@@ -1,5 +1,9 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vw;
+}
 
 $font-color:rgb(9, 37, 79);
