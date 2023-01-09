@@ -1,7 +1,7 @@
 <div class="container">
-    <app-mail-list-item></app-mail-list-item>
-    <app-mail-list-item></app-mail-list-item>
-    <app-mail-list-item></app-mail-list-item>
-    <app-mail-list-item></app-mail-list-item>
-    <app-mail-list-item></app-mail-list-item>
+    <app-mail-list-item 
+    *ngFor="let mail of mailService.getEmails()" 
+    [mail]="mail"
+    (selectedMail)="selectEmail($event)"
+     ></app-mail-list-item>
 </div>
