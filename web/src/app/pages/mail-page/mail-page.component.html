@@ -1,4 +1,4 @@
-<app-mail-nav-bar></app-mail-nav-bar>
+<app-mail-nav-bar (newEmail)="setNewEmail($event)"></app-mail-nav-bar>
 <div class="container">
     <app-mail-list (selectedMail)="setSelectedEmail($event)"></app-mail-list>
     <app-mail-detail [mail]="mySelectedMail"></app-mail-detail>
