@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import {MatMenuModule} from '@angular/material/menu'; 
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog'; 
 
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
@@ -15,6 +16,7 @@ import { MailNavBarComponent } from './components/email/mail-nav-bar/mail-nav-ba
 import { MailListComponent } from './components/email/mail-list/mail-list.component';
 import { MailListItemComponent } from './components/email/mail-list-item/mail-list-item.component';
 import { MailDetailComponent } from './components/email/mail-detail/mail-detail.component';
+import { NewEmailComponent } from './components/email/new-email/new-email.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { MailDetailComponent } from './components/email/mail-detail/mail-detail.
     MailNavBarComponent,
     MailListComponent,
     MailListItemComponent,
-    MailDetailComponent
+    MailDetailComponent,
+    NewEmailComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { MailDetailComponent } from './components/email/mail-detail/mail-detail.
     FormsModule,
     AppRoutingModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

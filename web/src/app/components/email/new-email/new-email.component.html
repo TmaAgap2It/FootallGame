@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>New email</h1>
+<div mat-dialog-content>
+   <input placeholder="Sujet de l'email" [(ngModel)]="newEmail.subject" />
+   <br/>
+   <textarea placeholder="body de l'email ..." [(ngModel)]="newEmail.body"></textarea>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Annuler</button>
+  <button mat-button [mat-dialog-close]="newEmail" cdkFocusInitial>Envoyer</button>
+</div>
+
